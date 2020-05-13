@@ -1,0 +1,12 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP -5V
+K POWER, PWR
+$ENDCMP
+#
+$CMP LED_Dual_2pin
+D LED dual, 2pin version
+K led diode bicolor dual
+$ENDCMP
+#
+#End Doc Library

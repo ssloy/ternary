@@ -1,0 +1,357 @@
+EESchema Schematic File Version 4
+LIBS:trimux-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L trimux-rescue:CP1 C1
+U 1 1 58A59C9B
+P 5550 2250
+F 0 "C1" H 5575 2350 50  0000 L CNN
+F 1 "CP1" H 5575 2150 50  0000 L CNN
+F 2 "SMD_Packages:SMD-1206_Pol" H 5550 2250 50  0001 C CNN
+F 3 "" H 5550 2250 50  0000 C CNN
+	1    5550 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L trimux-rescue:CP1 C2
+U 1 1 58A59D4C
+P 5850 2300
+F 0 "C2" H 5875 2400 50  0000 L CNN
+F 1 "CP1" H 5875 2200 50  0000 L CNN
+F 2 "SMD_Packages:SMD-1206_Pol" H 5850 2300 50  0001 C CNN
+F 3 "" H 5850 2300 50  0000 C CNN
+	1    5850 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L trimux-rescue:CP1 C3
+U 1 1 58A59DF1
+P 5650 4250
+F 0 "C3" H 5675 4350 50  0000 L CNN
+F 1 "CP1" H 5675 4150 50  0000 L CNN
+F 2 "SMD_Packages:SMD-1206_Pol" H 5650 4250 50  0001 C CNN
+F 3 "" H 5650 4250 50  0000 C CNN
+	1    5650 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L trimux-rescue:CP1 C4
+U 1 1 58A59E9A
+P 5950 4250
+F 0 "C4" H 5975 4350 50  0000 L CNN
+F 1 "CP1" H 5975 4150 50  0000 L CNN
+F 2 "SMD_Packages:SMD-1206_Pol" H 5950 4250 50  0001 C CNN
+F 3 "" H 5950 4250 50  0000 C CNN
+	1    5950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L trimux-rescue:CONN_01X03 JP3
+U 1 1 58A59F25
+P 6350 5500
+F 0 "JP3" H 6350 5700 50  0000 C CNN
+F 1 "CONN_01X03" V 6450 5500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 6350 5500 50  0001 C CNN
+F 3 "" H 6350 5500 50  0000 C CNN
+	1    6350 5500
+	0    -1   1    0   
+$EndComp
+$Comp
+L trimux-rescue:CONN_01X05 JP2
+U 1 1 58A59FB6
+P 5300 5500
+F 0 "JP2" H 5300 5800 50  0000 C CNN
+F 1 "CONN_01X05" V 5400 5500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 5300 5500 50  0001 C CNN
+F 3 "" H 5300 5500 50  0000 C CNN
+	1    5300 5500
+	0    -1   1    0   
+$EndComp
+$Comp
+L trimux-rescue:CONN_01X05 JP1
+U 1 1 58A5A013
+P 4200 5500
+F 0 "JP1" H 4200 5800 50  0000 C CNN
+F 1 "CONN_01X05" V 4300 5500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 4200 5500 50  0001 C CNN
+F 3 "" H 4200 5500 50  0000 C CNN
+	1    4200 5500
+	0    -1   1    0   
+$EndComp
+$Comp
+L dg403dj:DG403 IC1
+U 1 1 58A5A399
+P 4800 1850
+F 0 "IC1" H 4650 2350 60  0000 C CNN
+F 1 "DG403" H 4800 1350 60  0000 C CNN
+F 2 "SMD_Packages:SO-16-N" H 4800 1350 60  0001 C CNN
+F 3 "" H 4800 1350 60  0001 C CNN
+	1    4800 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L dg403dj:DG403 IC2
+U 1 1 58A5A436
+P 4800 3800
+F 0 "IC2" H 4650 4300 60  0000 C CNN
+F 1 "DG403" H 4800 3300 60  0000 C CNN
+F 2 "SMD_Packages:SO-16-N" H 4800 3300 60  0001 C CNN
+F 3 "" H 4800 3300 60  0001 C CNN
+	1    4800 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1650 5350 1650
+Wire Wire Line
+	5200 1450 5350 1450
+Wire Wire Line
+	5350 1450 5350 1650
+Connection ~ 5350 1650
+Wire Wire Line
+	5200 1550 5450 1550
+Wire Wire Line
+	5200 1750 5450 1750
+Wire Wire Line
+	5450 1750 5450 1550
+Connection ~ 5450 1550
+Wire Wire Line
+	5200 1950 5550 1950
+Wire Wire Line
+	5550 1950 5550 2100
+Connection ~ 5550 1950
+Wire Wire Line
+	5200 2050 5400 2050
+Wire Wire Line
+	5550 2400 5550 2500
+Wire Wire Line
+	5550 2500 5400 2500
+Wire Wire Line
+	5400 2500 5400 2050
+Connection ~ 5400 2050
+Wire Wire Line
+	5850 2150 5850 2050
+Connection ~ 5850 2050
+Wire Wire Line
+	5200 2150 5300 2150
+Wire Wire Line
+	5300 2150 5300 2250
+Wire Wire Line
+	5300 2600 5850 2600
+Wire Wire Line
+	5850 2600 5850 2450
+Connection ~ 5850 2600
+Wire Wire Line
+	5200 2250 5300 2250
+Connection ~ 5300 2250
+Wire Wire Line
+	5200 3900 5400 3900
+Wire Wire Line
+	5200 4000 5400 4000
+Wire Wire Line
+	5400 4000 5400 3900
+Connection ~ 5400 3900
+Wire Wire Line
+	5200 4100 5400 4100
+Wire Wire Line
+	5200 4200 5500 4200
+Wire Wire Line
+	5500 4000 5500 4200
+Wire Wire Line
+	5500 4000 5950 4000
+Wire Wire Line
+	5650 4100 5650 3900
+Connection ~ 5650 3900
+Wire Wire Line
+	5950 4100 5950 4000
+Connection ~ 5950 4000
+Wire Wire Line
+	5500 4500 5650 4500
+Wire Wire Line
+	5650 4500 5650 4400
+Connection ~ 5500 4200
+Wire Wire Line
+	5400 4600 5950 4600
+Wire Wire Line
+	5950 4600 5950 4400
+Wire Wire Line
+	5400 4100 5400 4600
+Wire Wire Line
+	6250 2600 6250 4600
+Connection ~ 5950 4600
+Connection ~ 6250 4600
+Wire Wire Line
+	6450 1950 6450 3900
+Wire Wire Line
+	6350 2050 6350 4000
+Connection ~ 6350 4000
+Connection ~ 6450 3900
+Wire Wire Line
+	4400 3900 4000 3900
+Wire Wire Line
+	4000 1950 4000 3900
+Wire Wire Line
+	4400 1950 4000 1950
+Connection ~ 4000 3900
+Wire Wire Line
+	3500 2050 4400 2050
+Wire Wire Line
+	4100 5300 4100 1650
+Wire Wire Line
+	4100 1650 4400 1650
+Wire Wire Line
+	4200 3600 4400 3600
+Wire Wire Line
+	4200 3600 4200 5300
+Wire Wire Line
+	4400 3400 4300 3400
+Wire Wire Line
+	4300 3400 4300 5300
+Wire Wire Line
+	6550 1650 6550 4750
+Wire Wire Line
+	6550 4750 4400 4750
+Wire Wire Line
+	4400 4750 4400 5300
+Wire Wire Line
+	6650 1550 6650 4850
+Wire Wire Line
+	6650 4850 5500 4850
+Wire Wire Line
+	5500 4850 5500 5300
+Wire Wire Line
+	4400 3500 3800 3500
+Wire Wire Line
+	3800 3500 3800 4850
+Wire Wire Line
+	3800 4850 5400 4850
+Wire Wire Line
+	5400 4850 5400 5300
+Wire Wire Line
+	4400 3700 3700 3700
+Wire Wire Line
+	3700 3700 3700 4950
+Wire Wire Line
+	3700 4950 5300 4950
+Wire Wire Line
+	5300 4950 5300 5300
+Wire Wire Line
+	3600 1750 4400 1750
+Wire Wire Line
+	3600 1750 3600 5050
+Wire Wire Line
+	3600 5050 5200 5050
+Wire Wire Line
+	5200 5050 5200 5300
+Wire Wire Line
+	5100 5300 5100 5150
+Wire Wire Line
+	5100 5150 3500 5150
+Wire Wire Line
+	3500 5150 3500 4000
+Wire Wire Line
+	3500 4000 4400 4000
+Connection ~ 3500 4000
+Wire Wire Line
+	5200 3400 5300 3400
+Wire Wire Line
+	5300 2950 5300 3400
+Wire Wire Line
+	5300 3600 5200 3600
+Wire Wire Line
+	5300 2950 3750 2950
+Wire Wire Line
+	3750 2950 3750 1450
+Wire Wire Line
+	3750 1450 4400 1450
+Connection ~ 5300 3400
+Wire Wire Line
+	5200 3500 5400 3500
+Wire Wire Line
+	5400 2850 5400 3500
+Wire Wire Line
+	5400 3700 5200 3700
+Wire Wire Line
+	5400 2850 3850 2850
+Wire Wire Line
+	3850 2850 3850 1550
+Wire Wire Line
+	3850 1550 4400 1550
+Connection ~ 5400 3500
+Text Label 6250 5250 1    60   ~ 0
+V-NEG
+Text Label 6350 5250 1    60   ~ 0
+GND
+Text Label 6450 5250 1    60   ~ 0
+V-POS
+Text Label 5100 5300 1    60   ~ 0
+S2
+Text Label 5200 5300 1    60   ~ 0
+N2
+Text Label 5300 5300 1    60   ~ 0
+O2
+Text Label 5400 5300 1    60   ~ 0
+P2
+Text Label 5500 5300 1    60   ~ 0
+C2
+Text Label 4000 5300 1    60   ~ 0
+S1
+Text Label 4100 5300 1    60   ~ 0
+N1
+Text Label 4200 5300 1    60   ~ 0
+O1
+Text Label 4300 5300 1    60   ~ 0
+P1
+Text Label 4400 5300 1    60   ~ 0
+C1
+Wire Wire Line
+	5350 1650 6550 1650
+Wire Wire Line
+	5450 1550 6650 1550
+Wire Wire Line
+	5550 1950 6450 1950
+Wire Wire Line
+	5400 2050 5850 2050
+Wire Wire Line
+	5850 2050 6350 2050
+Wire Wire Line
+	5850 2600 6250 2600
+Wire Wire Line
+	5300 2250 5300 2600
+Wire Wire Line
+	5400 3900 5650 3900
+Wire Wire Line
+	5650 3900 6450 3900
+Wire Wire Line
+	5950 4000 6350 4000
+Wire Wire Line
+	5500 4200 5500 4500
+Wire Wire Line
+	5950 4600 6250 4600
+Wire Wire Line
+	6250 4600 6250 5300
+Wire Wire Line
+	6350 4000 6350 5300
+Wire Wire Line
+	6450 3900 6450 5300
+Wire Wire Line
+	4000 3900 4000 5300
+Wire Wire Line
+	3500 4000 3500 2050
+Wire Wire Line
+	5300 3400 5300 3600
+Wire Wire Line
+	5400 3500 5400 3700
+$EndSCHEMATC

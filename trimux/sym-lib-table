@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name trimux-rescue)(type Legacy)(uri ${KIPRJMOD}/trimux-rescue.lib)(options "")(descr ""))
+  (lib (name dg403dj)(type Legacy)(uri ${KIPRJMOD}/dg403dj.lib)(options "")(descr ""))
+)

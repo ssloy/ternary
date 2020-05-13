@@ -1,0 +1,198 @@
+0:00:07.339,0:00:10.540
+Hey everybody, with this episode, I'm starting a series of videos
+
+0:00:10.540,0:00:12.639
+about building a ternary calculator. 
+
+0:00:12.639,0:00:14.480
+As far as I know, at the moment it will be 
+
+0:00:14.480,0:00:17.700
+the only working programmable ternary calculator 
+
+0:00:17.700,0:00:19.960
+in the world, but, of course, 
+
+0:00:19.960,0:00:20.960
+not the first one.
+
+0:00:20.960,0:00:23.930
+The beginning of my microseries is timed to the fiftieth anniversary 
+
+0:00:23.930,0:00:26.170
+of the Setun-70 ternary computer. 
+
+0:00:26.170,0:00:29.480
+I will try to make the videos as short as possible, 
+
+0:00:29.480,0:00:31.920
+and in each of them cover only one small topic.
+
+0:00:31.920,0:00:34.520
+So, today we will talk about debugging input-output board, 
+
+0:00:34.520,0:00:36.690
+because if we can't read or write information, 
+
+0:00:36.690,0:00:38.280
+why would  we need a calculator at all?! 
+
+0:00:38.280,0:00:43.440
+So, this I/O board here will help me 
+
+0:00:43.440,0:00:44.440
+debug my calculator. 
+
+0:00:44.440,0:00:45.809
+If we draw an analogy with a normal computer, 
+
+0:00:45.809,0:00:49.130
+this board is the analogue of both the keyboard and
+
+0:00:49.130,0:00:50.130
+the screen.
+
+0:00:50.130,0:00:52.410
+First let us look at the "keyboard" function. 
+
+0:00:52.410,0:00:56.079
+This board bears nine three-position 
+
+0:00:56.079,0:01:01.340
+switches on each of the nine corresponding lines, 
+
+0:01:01.340,0:01:07.470
+which give out -5, 0 or +5 volts 
+
+0:01:07.470,0:01:10.960
+that are taken from this power supply, 
+
+0:01:10.960,0:01:11.960
+depending on the switch position.
+
+0:01:11.960,0:01:15.310
+These three voltage levels represent 
+
+0:01:15.310,0:01:18.659
+three different states on each line of the calculator. 
+
+0:01:18.659,0:01:21.969
+In the next episode we will definitely talk about
+
+0:01:21.969,0:01:24.319
+how to interpret these three states, 
+
+0:01:24.319,0:01:27.380
+but at this point it's important for us to understand that 
+
+0:01:27.380,0:01:30.729
+this board allows us to feed nine 
+
+0:01:30.729,0:01:32.450
+lines (three states each) into my calculator. 
+
+0:01:32.450,0:01:38.109
+Therefore, with one such board I can encode 
+
+0:01:38.109,0:01:44.469
+3^9 = 19683 different system states.
+
+0:01:44.469,0:01:49.299
+I hope we've figured out the "keyboard" function, 
+
+0:01:49.299,0:01:50.670
+but what about the "screen" function? 
+
+0:01:50.670,0:01:56.201
+I have a two-color LED connected 
+
+0:01:56.201,0:01:58.499
+to each line that shows its current state.
+
+0:01:58.499,0:02:01.890
+When we have +5 volts on the line, the diode is green,
+
+0:02:01.890,0:02:06.659
+when line 0, it's out, and when line -5 volts, 
+
+0:02:06.659,0:02:08.399
+the diode is red. 
+
+
+0:02:08.399,0:02:10.569
+The transistors here work as an amplifier, 
+
+0:02:12.662,0:02:15.790
+so that the diodes do not load the I/O lines. 
+
+0:02:15.790,0:02:18.900
+So, in "keyboard" mode, the LEDs simply duplicate 
+
+0:02:18.900,0:02:21.870
+the switch positions.
+
+0:02:21.870,0:02:24.959
+But now note that in the middle position, 
+
+0:02:24.959,0:02:28.150
+the switch is weakly tied to the ground. 
+
+0:02:28.150,0:02:31.200
+So if we apply a voltage to the line, 
+
+0:02:31.200,0:02:34.659
+it will override the switch, and the LED 
+
+0:02:34.659,0:02:36.010
+will display the incoming information. 
+
+0:02:36.010,0:02:38.930
+Let me illustrate with the simplest example: 
+
+0:02:38.930,0:02:43.319
+the first line will work in output mode, 
+
+0:02:43.319,0:02:47.129
+and the ninth line will work in input mode, that is, 
+
+0:02:47.129,0:02:50.450
+I put the switch to the center position. 
+
+0:02:50.450,0:02:55.140
+I just connect them one to the other, 
+
+0:02:55.140,0:02:59.359
+which means the first line goes to line nine. 
+
+0:02:59.359,0:03:05.830
+In this configuration, the LED on line nine 
+
+0:03:05.830,0:03:09.620
+will repeat everything that happens on line one. 
+
+0:03:09.620,0:03:11.819
+Of course, the system is symmetrical, and if you put the switch 
+
+0:03:11.819,0:03:14.540
+on the first line in the middle position, 
+
+0:03:14.540,0:03:17.540
+it will show everything, it will duplicate everything, 
+
+0:03:17.540,0:03:20.569
+what happens on the ninth.
+
+0:03:20.569,0:03:24.879
+To sum up, we are able to read the information, as well as send 
+
+0:03:24.879,0:03:27.689
+ternary signals to our (yet to be built) 
+
+0:03:27.689,0:03:28.689
+calculator. 
+
+0:03:28.689,0:03:33.549
+In the next video, we'll talk 
+about how to interpret these signals.
+
+

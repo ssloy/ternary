@@ -1,0 +1,18 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +5V
+D Power flag, +5V
+K power-flag
+$ENDCMP
+#
+$CMP -5V
+D Power flag, -5V
+K power-flag
+$ENDCMP
+#
+$CMP GNDREF
+D Power flag, reference supply ground
+K power-flag
+$ENDCMP
+#
+#End Doc Library

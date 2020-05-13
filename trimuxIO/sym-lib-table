@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name trimuxIO-rescue)(type Legacy)(uri ${KIPRJMOD}/trimuxIO-rescue.lib)(options "")(descr ""))
+  (lib (name trimuxIO)(type Legacy)(uri ${KIPRJMOD}/trimuxIO.lib)(options "")(descr ""))
+)
