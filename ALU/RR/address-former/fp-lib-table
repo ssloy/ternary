@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name triador)(type KiCad)(uri /home/ssloy/+/ternary/ALU/RR)(options "")(descr "")(disabled))
+  (lib (name ALU)(type KiCad)(uri /home/ssloy/+/ternary/ALU)(options "")(descr ""))
+)
